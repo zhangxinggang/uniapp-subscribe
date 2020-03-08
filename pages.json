@@ -1,0 +1,61 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style":{
+				"enablePullDownRefresh": true
+			}
+		},{
+			"path": "pages/mine/index"
+		},{
+			"path":"pages/subscribeScenic/scenicSubscribe"
+		},{
+			"path": "pages/mySubscribe/index",
+			"style": {
+				"navigationBarTitleText": "我的预约"
+			}
+		},{
+			"path": "pages/subscribeScenic/myScenicSubscribe",
+			"style": {
+				"navigationBarTitleText": "我的发布"
+			}
+		},{
+			"path": "pages/subscribeScenic/index",
+			"style": {
+				"navigationBarTitleText": "景点预约"
+			}
+		},{
+			"path": "pages/mySubscribe/addSubscribe",
+			"style": {
+				"navigationBarTitleText": "景点预约"
+			}
+		},{
+			"path": "pages/authorize/authorize"
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "预约系统",
+		"navigationBarBackgroundColor": "#e1e1ff",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom"
+	},
+	"tabBar":{
+		"color":"#666666",
+		"selectedColor":"#2370b4",
+		"backgroundColor":"#ffffff",
+		"list":[
+			{
+				"iconPath":"static/image/home.png",
+				"selectedIconPath":"static/image/home_icon.png",
+				"pagePath":"pages/index/index",
+				"text":"首页"
+			},{
+				"iconPath":"static/image/mine.png",
+				"selectedIconPath":"static/image/mine_icon.png",
+				"pagePath":"pages/mine/index",
+				"text":"我的"
+			}
+		]
+	}
+}
